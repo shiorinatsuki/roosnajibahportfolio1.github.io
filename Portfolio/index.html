@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roosnajibah Personal Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/ae3782667d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>                    
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Welcome to My Personal Portfolio Website</p>
+                <h1>Hi, Im <span>Roosnajibah Aisyah</span></h1>
+                <p> Check out my other pages</p>
+            </div>
+            <div class="about-btn"><i class="fa-solid fa-magnifying-glass-arrow-right"></i><a href =about.html class="btn btn1">About Me</a></div>
+            <div class="project-btn"><i class="fa-solid fa-magnifying-glass-arrow-right"></i><a href =projects.html class="btn btn1">Projects</a></div>
+            <div class="contact-btn"><i class="fa-solid fa-magnifying-glass-arrow-right"></i><a href =contact.html class="btn btn1">Contact Me</a></div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 roos. All rights reserved. </p>
+        </div>
+    </div>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-150px";
+        }
+
+
+    </script>
+
+</body>
+
+</html>
